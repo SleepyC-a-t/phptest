@@ -4,7 +4,7 @@
     $pass="";
     if(isset($_POST['btn'])){
         $user=$_POST['namn']
-        $pass=$_POST['pass']
+        $pass=$_POST['pass'];
     }
 ?>
 <html lang="en">
