@@ -3,7 +3,7 @@
     $user="";
     $pass="";
     if(isset($_POST['btn'])){
-        $user=$_POST['namn']
+        $user=$_POST['namn'];
         $pass=$_POST['pass'];
     }
 ?>
@@ -27,7 +27,7 @@
             <input type="text" name="namn" id="name" required placeholder="Ange ditt namn.">
             <label for="pass">Lösenord</label>
             <input type="password" name="pass" id="pass" required minlength="16">
-            <input type="submit" name="btn" balue="log in">
+            <input type="submit" name="btn" value="log in">
             <?php) ?>
         </form>
     </main>
