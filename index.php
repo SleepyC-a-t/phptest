@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php
+    $user="";
+    $pass="";
+    if(isset($_POST['btn'])){
+        $user=$_POST['namn'],
+        $pass=$_POST['pass'];
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,15 +16,19 @@
 </head>
 <body>
     <header>
-        <h1>Test</h1>
+        <?php if(isset($_POST['btn']))( ?>
+        <h1>Välkommen <?=user?>!</h1>
+        <h2>Ditt lösenord är <?=$pass?></h2>
+        <?php )while( ?>
     </header>
     <main>
         <form action="index.php" method="post">
             <label for="name">Namn</label>
             <input type="text" name="namn" id="name" required placeholder="Ange ditt namn.">
             <label for="pass">Lösenord</label>
-            <input type="password" name="pass" id="pass" required minlength="5">
+            <input type="password" name="pass" id="pass" required minlength="16">
             <input type="submit" name="btn" balue="log in">
+            <?php) ?>
         </form>
     </main>
     <footer>
