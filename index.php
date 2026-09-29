@@ -29,7 +29,7 @@
             <label for="pass">Lösenord</label>
             <input type="password" name="pass" id="pass" required minlength="16">
             <input type="submit" name="btn" value="log in">
-            <?php) ?>
+            <?php); ?>
         </form>
     </main>
     <footer>
