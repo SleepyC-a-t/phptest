@@ -19,8 +19,8 @@
         <h1>Formulär</h1>
     </header>
     <main>
-        <?php if(isset($_POST['btn'])){ ?>
-        <h1>Välkommen <?=user?>!</h1>
+        <?php if(isset($_POST['btn'])) { ?>
+        <h1>Välkommen <?=$user?>!</h1>
         <h2>Ditt lösenord är <?=$pass?></h2>
         <?php }while( ?>
         <form action="index.php" method="post">
