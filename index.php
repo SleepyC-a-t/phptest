@@ -22,7 +22,7 @@
         <?php if(isset($_POST['btn'])){ ?>
         <h1>Välkommen <?=user?>!</h1>
         <h2>Ditt lösenord är <?=$pass?></h2>
-        <?php }while;( ?>
+        <?php }while( ?>
         <form action="index.php" method="post">
             <label for="name">Namn</label>
             <input type="text" name="namn" id="name" required placeholder="Ange ditt namn.">
